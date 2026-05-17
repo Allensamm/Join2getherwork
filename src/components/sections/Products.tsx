@@ -186,7 +186,7 @@ export default function Products() {
               <motion.div
                 key="collapsed"
                 exit={{ opacity: 0, transition: { duration: 0.25 } }}
-                className="flex items-center justify-between gap-8 min-h-[420px]"
+                className="flex flex-col md:flex-row items-center justify-between gap-8"
               >
                 <motion.button
                   onClick={() => setExpanded(true)}
@@ -200,7 +200,7 @@ export default function Products() {
                   see our products <span>→</span>
                 </motion.button>
 
-                <div className="w-[320px] h-[400px] shrink-0">
+                <div className="w-full md:w-[320px] h-[280px] md:h-[400px]">
                   <ProductCard
                     product={products[0]}
                     rotate={4}
@@ -225,7 +225,7 @@ export default function Products() {
                       delay: i === 0 ? 0 : i * 0.09,
                       ease: [0.16, 1, 0.3, 1],
                     }}
-                    className="h-[400px]"
+                    className="h-[220px] md:h-[400px]"
                   >
                     <ProductCard
                       product={product}

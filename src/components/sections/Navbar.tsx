@@ -92,7 +92,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className="font-bold text-black text-sm shrink-0 hover:opacity-60 transition-opacity duration-200"
+              className="hidden md:block font-bold text-black text-sm shrink-0 hover:opacity-60 transition-opacity duration-200"
             >
               Get in Touch
             </Link>
